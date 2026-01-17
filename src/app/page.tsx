@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CodeBlock } from "./components/code-block";
 
 const techStack = [
   {
@@ -59,6 +60,9 @@ export default function Home() {
             </a>
           ))}
         </div>
+
+        {/* Clone Command */}
+        <CodeBlock code="git clone https://github.com/trickrenzgarcia/nextjs-elysia-bun-starter.git" />
 
         {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row">
